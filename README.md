@@ -18,6 +18,17 @@ python hand_raise.py
 The default uses webcam `0` and the `yolo11n-pose.pt` model. Ultralytics
 downloads the model weights on first use. Press `q` to quit.
 
+For an OAK-D-S2, connect it to your computer over USB, install the dependencies
+above, and run:
+
+```powershell
+python hand_raise.py --oak
+```
+
+This captures frames directly from the OAK camera through DepthAI; it does not
+need to appear in Windows' camera settings. The hand-raise result is shown in
+the OpenCV window. Press `q` in that window to quit.
+
 Use `--hands one` to detect either hand, or provide a video file, camera index,
 or stream URL with `--source`:
 
